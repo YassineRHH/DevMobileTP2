@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playfair_display"
+        android:gravity="center"
+        android:text="Mesure De Niveau De Glycemie"
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="Vote age"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:inputType="text"
+
+        />
+
+    <SeekBar
+        android:id="@+id/sbAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:max="120"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Est ce que vouz jeunez?"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:ems="10"
+        android:inputType="text"
+
+        />
+
+    <RadioGroup
+
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rbtoui"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:text="Oui"
+            android:textSize="20sp"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/rbtnon"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:text="Non"
+            android:textSize="20sp"
+            android:checked="false"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_marginTop="20dp"
+        android:hint="Valeur mesure (en mmol/l)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnConsulter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/bleu"
+        android:onClick="calculer"
+        />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="25sp"
+        android:gravity="center"
+
+        />
+
+
+</LinearLayout>
